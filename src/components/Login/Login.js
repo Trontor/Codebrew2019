@@ -18,7 +18,7 @@ class Login extends Component {
   render() {
     return (
       <>
-        <div className="container">
+        <div className="login-container">
           <div className="row h-100 row align-items-center">
             <div className="col-sm-9 col-md-7 col-lg-5 mx-auto my-auto">
               <div className="card card-signin my-3">
@@ -31,6 +31,9 @@ class Login extends Component {
                     height="150px"
                   />
                   <p className="buskie">Buskie</p>
+                  <p id="login-subtitle">
+                    Supporting Melbourne's Street Artists
+                  </p>
                 </div>
                 <div className="card-body">
                   <h5 className="card-title text-center">Sign In</h5>
@@ -72,9 +75,10 @@ class Login extends Component {
                       </label>
                     </div>
                     <button
-                      className="btn btn-lg btn-primary btn-block text-uppercase"
+                      className="btn btn-lg btn-info btn-block text-uppercase"
                       type="submit"
                     >
+                    <i class="fas fa-sign-in-alt" style={{marginRight: "10px"}}></i>
                       Sign in
                     </button>
                     <hr className="my-4" />

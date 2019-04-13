@@ -4,12 +4,12 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-dark blue">
+      <nav class="navbar navbar-expand-lg navbar-dark default-color">
         <a class="navbar-brand" href="#">
           <img
-            src={require("../../images/sombrero.png")}
-            height="30"
-            alt="mdb logo"
+            src={require("../../images/sombrero_wh.png")}
+            height="40"
+            alt="Buskie"
           />
         </a>
         <a class="navbar-brand" href="#">
@@ -30,24 +30,29 @@ class Navbar extends Component {
 
         <div class="collapse navbar-collapse" id="basicExampleNav">
           <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
+            <li class="nav-item">
+              <a class="nav-link" href="/">
                 Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Features
+              <a class="nav-link" href="/map">
+                Map
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Pricing
+              <a class="nav-link" href="/featured">
+                Featured
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/now">
+                On Now
               </a>
             </li>
 
-            <li class="nav-item dropdown">
+            {/* <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 id="navbarDropdownMenuLink"
@@ -71,10 +76,10 @@ class Navbar extends Component {
                   Something else here
                 </a>
               </div>
-            </li>
+            </li> */}
           </ul>
 
-          <form class="form-inline">
+          {/* <form class="form-inline">
             <div class="md-form my-0">
               <input
                 class="form-control mr-sm-2"
@@ -83,7 +88,11 @@ class Navbar extends Component {
                 aria-label="Search"
               />
             </div>
-          </form>
+          </form> */}
+          <ul class="nav navbar-nav navbar-right">
+            {/* <li><a href="#"><span class="glyphicon glyphicon-user  ml-sm-2 mr-sm-2"></span> Sign Up</a></li> */}
+            <li><a href="/login"><span class="glyphicon glyphicon-log-in  ml-sm-2  mr-sm-2"></span> Login</a></li>
+          </ul>
         </div>
       </nav>
     );

@@ -13,7 +13,6 @@ const MapContainer = props => {
       lat: -37.8136,
       lng: 144.9631
      }}>
-      <Marker onClick={onMarkerClick} name={"Current location"} />
 
       <InfoWindow onClose={onInfoWindowClose}>
         <div>

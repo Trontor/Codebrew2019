@@ -1,0 +1,15 @@
+.distance {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.card {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.card ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}

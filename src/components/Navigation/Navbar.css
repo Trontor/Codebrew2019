@@ -1,0 +1,16 @@
+.navbar {
+    z-index: 1;
+}
+
+.nav a {
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+.nav a, .nav-link {
+    font-size: 1.2em;
+
+}
