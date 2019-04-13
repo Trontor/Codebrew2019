@@ -30,7 +30,7 @@ class Navbar extends Component {
 
         <div class="collapse navbar-collapse" id="basicExampleNav">
           <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="/">
                 Home
                 <span class="sr-only">(current)</span>
