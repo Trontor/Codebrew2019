@@ -11,10 +11,6 @@
   margin-bottom: 0px;
 }
 
-.login-container {
-
-}
-
 body {
   background: url("../../images/brickwall.png");
 }
@@ -51,6 +47,10 @@ body::after {
 
 .form-signin {
   width: 100%;
+}
+
+.login-container {
+  height: 100%;
 }
 
 .form-signin .btn {
