@@ -7,7 +7,12 @@ import Cardlist from './Cardlist/Cardlist.js';
 
 const Sidebar = () => {
   return (
-    <div><Cardlist></Cardlist></div>
+    <>
+      <div className="container">
+        <h2 className="sidebar-head">Busking Now</h2>
+        <div className="sidebar"><Cardlist></Cardlist></div>
+      </div>
+    </>
   );
 };
 
