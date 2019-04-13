@@ -5,9 +5,11 @@ import Facebook from "../Facebook/Facebook";
 
 class Login extends Component {
   handleSubmit = e => {
-    console.log("test");
-    this.props.history.push("/map");
+    this.nextPage();
     e.preventDefault();
+  };
+  nextPage = () => {
+    this.props.history.push("/map");
   };
   componentDidMount() {
     document.getElementById("inputEmail").value = "rohyljoshi@hotmail.com";
@@ -82,13 +84,10 @@ class Login extends Component {
                   >
                     <i className="fab fa-google mr-2" /> Sign in with Google
                   </button> */}
-                    <button
-                      className="btn btn-lg btn-facebook btn-block text-uppercase"
-                      type="submit"
-                    >
-                      <Facebook />
-                      {/* Sign in with Facebook */}
-                    </button>
+                    {/* <button className="" type="submit"> */}
+                    <Facebook onAuth={this.nextPage} />
+                    {/* Sign in with Facebook */}
+                    {/* </button> */}
                   </form>
                 </div>
               </div>

@@ -19,9 +19,10 @@ class Facebook extends Component {
           autoLoad={false}
           fields="name,email,picture"
           onClick={() => {}}
-          cssClass="btn-facebook fab text-uppercase "
+          cssClass="btn btn-lg btn-primary btn-block text-uppercase "
           callback={res => {
             console.log(res);
+            this.props.onAuth();
           }}
         />
       );
