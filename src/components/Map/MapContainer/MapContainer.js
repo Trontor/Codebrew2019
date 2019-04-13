@@ -9,7 +9,10 @@ const onInfoWindowClose = () => {
 };
 const MapContainer = props => {
   return (
-    <Map google={props.google} zoom={14}>
+    <Map google={props.google} zoom={15}         initialCenter={{
+      lat: -37.8136,
+      lng: 144.9631
+     }}>
       <Marker onClick={onMarkerClick} name={"Current location"} />
 
       <InfoWindow onClose={onInfoWindowClose}>
