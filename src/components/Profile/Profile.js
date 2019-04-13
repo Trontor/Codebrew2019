@@ -65,21 +65,21 @@ class Profile extends Component {
       }
     ];
     return (
-      <div class="row h-100">
-        {/* <div class="col-12 my-auto">
-          <div class="card">Card</div>
+      <div className="row h-100">
+        {/* <div className="col-12 my-auto">
+          <div className="card">Card</div>
         </div> */}
-        <div class="card m-auto col-lg-4 col-md-6 col-sm-12 text-center">
-          <div class="row user-detail">
-            <div class="col-lg-12 col-sm-12 col-12">
+        <div className="card m-auto col-lg-4 col-md-6 col-sm-12 text-center">
+          <div className="row user-detail">
+            <div className="col-lg-12 col-sm-12 col-12">
               <img
                 src={selectedProfile.imageURL}
-                class="rounded-circle img-thumbnail"
+                className="rounded-circle img-thumbnail"
                 height="150px"
               />
               <h5>{selectedProfile.name}</h5>
               <p>
-                <i class="fa fa-map-marker" aria-hidden="true" />{" "}
+                <i className="fa fa-map-marker" aria-hidden="true" />{" "}
                 {this.titleCase(selectedProfile.job)},{" "}
                 {this.titleCase(selectedProfile.location)}
               </p>
@@ -94,32 +94,32 @@ class Profile extends Component {
                 })}
               </span>
               <hr />
-              <div id="donation-container" class="container-fluid">
-                <div class="row flex-row flex-nowrap">
+              <div id="donation-container" className="container-fluid">
+                <div className="row flex-row flex-nowrap">
                   {donationInfo.map(info => (
                     <DonationCard info={info} />
                   ))}
                 </div>
               </div>
               <hr />
-              {/* <a href="#" class="btn btn-success btn-sm">
+              {/* <a href="#" className="btn btn-success btn-sm">
                 Follow
               </a>
-              <a href="#" class="btn btn-info btn-sm">
+              <a href="#" className="btn btn-info btn-sm">
                 Send Messege
               </a> */}
             </div>
           </div>
-          {/* <div class="row user-social-detail">
-            <div class="col-lg-12 col-sm-12 col-12">
+          {/* <div className="row user-social-detail">
+            <div className="col-lg-12 col-sm-12 col-12">
               <a href="#">
-                <i class="fa fa-facebook" aria-hidden="true" />
+                <i className="fa fa-facebook" aria-hidden="true" />
               </a>
               <a href="#">
-                <i class="fa fa-google-plus" aria-hidden="true" />
+                <i className="fa fa-google-plus" aria-hidden="true" />
               </a>
               <a href="#">
-                <i class="fa fa-twitter" aria-hidden="true" />
+                <i className="fa fa-twitter" aria-hidden="true" />
               </a>
             </div>
           </div> */}
