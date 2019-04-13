@@ -79,7 +79,7 @@ class Navbar extends Component {
             </li> */}
           </ul>
 
-          <form class="form-inline">
+          {/* <form class="form-inline">
             <div class="md-form my-0">
               <input
                 class="form-control mr-sm-2"
@@ -88,7 +88,7 @@ class Navbar extends Component {
                 aria-label="Search"
               />
             </div>
-          </form>
+          </form> */}
           <ul class="nav navbar-nav navbar-right">
             {/* <li><a href="#"><span class="glyphicon glyphicon-user  ml-sm-2 mr-sm-2"></span> Sign Up</a></li> */}
             <li><a href="/login"><span class="glyphicon glyphicon-log-in  ml-sm-2  mr-sm-2"></span> Login</a></li>

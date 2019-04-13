@@ -4,6 +4,7 @@ import Login from "./components/Login/Login";
 import Navbar from "./components/Navigation/Navbar";
 import { HashRouter, Route } from "react-router-dom";
 import Map from "./components/Map/Map";
+import Homepage from "./components/Homepage/Homepage";
 
 class App extends Component {
   render() {
