@@ -4,8 +4,8 @@
   "theme_color": "#21a1f3",
   "background_color": "#2196f3",
   "display": "browser",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/Codebrew2019/",
+  "start_url": "/Codebrew2019/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
