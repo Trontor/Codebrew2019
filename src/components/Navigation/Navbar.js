@@ -31,23 +31,28 @@ class Navbar extends Component {
         <div class="collapse navbar-collapse" id="basicExampleNav">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="">
+              <a class="nav-link" href="/">
                 Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/map">
                 Map
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Profiles
+              <a class="nav-link" href="/featured">
+                Featured
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/now">
+                On Now
               </a>
             </li>
 
-            <li class="nav-item dropdown">
+            {/* <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 id="navbarDropdownMenuLink"
@@ -71,7 +76,7 @@ class Navbar extends Component {
                   Something else here
                 </a>
               </div>
-            </li>
+            </li> */}
           </ul>
 
           <form class="form-inline">
