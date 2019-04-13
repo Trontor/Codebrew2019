@@ -4,9 +4,16 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <nav class="navbar navbar-expand-lg navbar-dark blue">
         <a class="navbar-brand" href="#">
-          Navbar
+          <img
+            src={require("../../images/sombrero.png")}
+            height="30"
+            alt="mdb logo"
+          />
+        </a>
+        <a class="navbar-brand" href="#">
+          Buskie
         </a>
 
         <button
@@ -22,7 +29,7 @@ class Navbar extends Component {
         </button>
 
         <div class="collapse navbar-collapse" id="basicExampleNav">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav m-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">
                 Home
