@@ -4,20 +4,20 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav class="navbar sticky navbar-expand-lg navbar-dark default-color">
-        <a class="navbar-brand" href="#">
+      <nav className="navbar sticky navbar-expand-lg navbar-dark default-color">
+        <a className="navbar-brand" href="#">
           <img
             src={require("../../images/sombrero_wh.png")}
             height="40"
             alt="Buskie"
           />
         </a>
-        <a class="navbar-brand" href="#">
+        <a className="navbar-brand" href="#">
           Buskie
         </a>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#basicExampleNav"
@@ -25,29 +25,29 @@ class Navbar extends Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon" />
         </button>
 
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">
+        <div className="collapse navbar-collapse" id="basicExampleNav">
+          <ul className="navbar-nav m-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
                 Home
-                <span class="sr-only">(current)</span>
+                <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/local">
+            <li className="nav-item">
+              <a className="nav-link" href="/local">
                 Local
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/featured">
+            <li className="nav-item">
+              <a className="nav-link" href="/featured">
                 Featured
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/profile">
+            <li className="nav-item">
+              <a className="nav-link" href="/profile">
                 Profile
               </a>
             </li>
@@ -89,9 +89,9 @@ class Navbar extends Component {
               />
             </div>
           </form> */}
-          <ul class="nav navbar-nav navbar-right">
+          <ul className="nav navbar-nav navbar-right">
             {/* <li><a href="#"><span class="glyphicon glyphicon-user  ml-sm-2 mr-sm-2"></span> Sign Up</a></li> */}
-            <li><a href="/login"><span class="glyphicon glyphicon-log-in  ml-sm-2  mr-sm-2"></span> Login</a></li>
+            <li><a href="/login"><span className="glyphicon glyphicon-log-in  ml-sm-2  mr-sm-2"></span> Login</a></li>
           </ul>
         </div>
       </nav>
