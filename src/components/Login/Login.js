@@ -1,5 +1,6 @@
 import "./Login.css";
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
 import Facebook from "../Facebook/Facebook";
 
@@ -106,4 +107,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);
