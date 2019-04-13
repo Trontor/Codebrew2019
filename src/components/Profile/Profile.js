@@ -23,11 +23,27 @@ class Profile extends Component {
   };
 
   render() {
+    const {
+      match: { params }
+    } = this.props;
+    const id = params.id;
+    const selectedProfile = this.state.profiles[id];
+    if (!selectedProfile) {
+      return null;
+    }
+    let name, job, location, imageURL, lat, long;
+    name = selectedProfile[1];
+    job = selectedProfile[2];
+    location = selectedProfile[3];
+    imageURL = selectedProfile[4];
+    lat = selectedProfile[5];
+    long = selectedProfile[6];
+    console.log(selectedProfile);
     let profile = this.props.src
       ? this.props.src
       : "https://scontent.fcbr1-1.fna.fbcdn.net/v/t1.0-9/14729388_1324492154241672_9117299267633054598_n.jpg?_nc_cat=104&_nc_ht=scontent.fcbr1-1.fna&oh=371476194b3479a56a1a72333ef65553&oe=5D3DADDB";
-    let name = this.props.name ? this.props.name : "Asil";
-    let job = this.props.job ? this.props.job : "Faff";
+    // let name = this.props.name ? this.props.name : "Asil";
+    // let job = this.props.job ? this.props.job : "Faff";
 
     return (
       <div class="container">
