@@ -1,0 +1,16 @@
+.markerimg {
+  display: block;
+  size: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 1000px;
+}
+.roundedmarker {
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 90px;
+  background-color: orange;
+  border-radius: 1000px;
+}
