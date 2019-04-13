@@ -34,14 +34,6 @@ class Profile extends Component {
     if (!selectedProfile) {
       return null;
     }
-    let name, job, location, imageURL, lat, long, desc;
-    name = selectedProfile[1];
-    job = selectedProfile[2];
-    location = selectedProfile[3];
-    imageURL = selectedProfile[4];
-    lat = selectedProfile[5];
-    long = selectedProfile[6];
-    desc = selectedProfile[7];
     console.log(selectedProfile);
     let profile = this.props.src
       ? this.props.src
@@ -81,18 +73,19 @@ class Profile extends Component {
           <div class="row user-detail">
             <div class="col-lg-12 col-sm-12 col-12">
               <img
-                src={imageURL}
+                src={selectedProfile.imageURL}
                 class="rounded-circle img-thumbnail"
                 height="150px"
               />
-              <h5>{name}</h5>
+              <h5>{selectedProfile.name}</h5>
               <p>
                 <i class="fa fa-map-marker" aria-hidden="true" />{" "}
-                {this.titleCase(job)}, {this.titleCase(location)}
+                {this.titleCase(selectedProfile.job)},{" "}
+                {this.titleCase(selectedProfile.location)}
               </p>
               <hr />
               <span>
-                {desc.split("\n").map((item, i) => {
+                {selectedProfile.desc.split("\n").map((item, i) => {
                   return (
                     <p className="profile-desc-segment" key={i}>
                       {item}

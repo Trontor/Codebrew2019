@@ -14,3 +14,12 @@
   list-style: none;
   padding-inline-start: 0px;
 }
+
+.card-img {
+  height: 50px;
+  width: 50px;
+}
+.card-title {
+  font-weight: 500;
+  font-family: "Segoe UI ", Tahoma, Geneva, Verdana, sans-serif;
+}

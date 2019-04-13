@@ -1,14 +1,14 @@
 #mapContainer {
   height: 100%;
   width: 100%;
-  padding-top: 4em;
 }
 
 #mapContainer .col-md-3 {
   padding-right: 0;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }

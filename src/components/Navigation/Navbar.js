@@ -53,6 +53,14 @@ class Navbar extends Component {
                 Featured
               </a>
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onClick={() => this.props.history.push("/dashboard")}
+              >
+                Dashboard
+              </a>
+            </li>
             {/* <li class="nav-item">
               <a
                 class="nav-link"
