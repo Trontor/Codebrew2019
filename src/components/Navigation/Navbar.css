@@ -1,21 +1,25 @@
 .navbar {
-    z-index: 1;
+  z-index: 1;
 }
 
 .nav a {
-    color: white;
+  color: white;
 }
 
 .navbar-brand {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
-.nav a, .nav-link {
-    font-size: 1.2em;
-
+.nav a,
+.nav-link {
+  font-size: 1.2em;
 }
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#basic-example-nav {
+  margin-right: 100px;
+}
