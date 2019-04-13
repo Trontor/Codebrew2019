@@ -42,7 +42,8 @@ class App extends Component {
         imageURL: val[4],
         lat: val[5],
         long: val[6],
-        desc: val[7]
+        desc: val[7],
+        live: val[8]
       };
       remapped.distance = this.measure(remapped.lat, remapped.long);
       mapped.push(remapped);

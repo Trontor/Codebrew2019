@@ -10,9 +10,9 @@ class Homepage extends Component {
           {/* Header */}
           <header className="masthead d-flex">
             <div className="container text-center my-auto">
-              <h1 className="mb-1">Buskers Make Melbourne</h1>
+              <h1 className="mb-1"><mark className="emphasisbg">Buskers Make Melbourne</mark></h1>
               <h3 className="mb-5">
-                <em>Experience the local talent</em>
+                <em><mark  className="emphasisbg">Experience the local talent</mark></em>
               </h3>
               <a className="btn btn-primary btn-xl js-scroll-trigger" href="/local">
                 Find buskers near me
