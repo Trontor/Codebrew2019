@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Login from "./components/Login/Login";
 import Navbar from "./components/Navigation/Navbar";
-import { HashRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Map from "./components/Map/Map";
 import Homepage from "./components/Homepage/Homepage";
 
@@ -11,11 +11,11 @@ class App extends Component {
     return (
       <>
         <Navbar />
-        <HashRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Route exact path="/" component={Login} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/map" component={Map} />
-        </HashRouter>
+        </BrowserRouter>
       </>
     );
   }
