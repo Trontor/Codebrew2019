@@ -19,7 +19,9 @@ class Facebook extends Component {
           autoLoad={false}
           fields="name,email,picture"
           onClick={() => {}}
-          cssClass="btn btn-lg btn-primary btn-block text-uppercase "
+          cssClass="btn btn-lg btn-primary btn-block text-uppercase"
+          textButton=" Login with Facebook"
+          icon="fa-facebook"
           callback={res => {
             console.log(res);
             this.props.onAuth();

@@ -75,9 +75,10 @@ class Login extends Component {
                       </label>
                     </div>
                     <button
-                      className="btn btn-lg btn-primary btn-block text-uppercase"
+                      className="btn btn-lg btn-info btn-block text-uppercase"
                       type="submit"
                     >
+                    <i class="fas fa-sign-in-alt" style={{marginRight: "10px"}}></i>
                       Sign in
                     </button>
                     <hr className="my-4" />
