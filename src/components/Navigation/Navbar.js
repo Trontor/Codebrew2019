@@ -4,12 +4,12 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-dark blue">
+      <nav class="navbar navbar-expand-lg navbar-dark default-color">
         <a class="navbar-brand" href="#">
           <img
-            src={require("../../images/sombrero.png")}
-            height="30"
-            alt="mdb logo"
+            src={require("../../images/sombrero_wh.png")}
+            height="40"
+            alt="Buskie"
           />
         </a>
         <a class="navbar-brand" href="#">
@@ -31,7 +31,7 @@ class Navbar extends Component {
         <div class="collapse navbar-collapse" id="basicExampleNav">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="">
                 Home
                 <span class="sr-only">(current)</span>
               </a>
