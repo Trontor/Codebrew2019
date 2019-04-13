@@ -42,7 +42,7 @@ class Navbar extends Component {
                 class="nav-link"
                 onClick={() => this.props.history.push("/local")}
               >
-                Local
+                Nearby
               </a>
             </li>
             <li class="nav-item">
