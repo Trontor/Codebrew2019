@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <Navbar />
+          {/* <Navbar /> */}
           <Route exact path="/" component={Homepage} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/local" component={Map} />

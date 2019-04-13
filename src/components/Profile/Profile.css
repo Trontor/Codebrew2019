@@ -1,0 +1,32 @@
+#profile-card {
+  margin: 0 auto;
+}
+#donation-container {
+  overflow: auto;
+}
+
+.img-thumbnail {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.card-body {
+  min-height: 300px;
+  min-width: 300px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
