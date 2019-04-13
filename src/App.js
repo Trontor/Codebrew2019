@@ -4,13 +4,14 @@ import Login from "./components/Login/Login";
 import Navbar from "./components/Navigation/Navbar";
 import { BrowserRouter, Route } from "react-router-dom";
 import Map from "./components/Map/Map";
+import Homepage from "./components/Homepage/Homepage";
 
 class App extends Component {
   render() {
     return (
       <>
         <Navbar />
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Route exact path="/" component={Login} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/map" component={Map} />
