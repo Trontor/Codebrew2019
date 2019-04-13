@@ -3,7 +3,12 @@
   height: 100%;
   font-family: "Source Sans Pro";
 }
-
+.emphasisbg{
+  background: #ffe7ba;
+}
+#about{
+  background-color:  #ffe7ba !important;
+}
 h1,
 h2,
 h3,
@@ -93,7 +98,7 @@ h6 {
 }
 
 .masthead h1 {
-  color: rgb(50, 50, 50);
+  color: rgb(197, 34, 34);
   font-size: 4rem;
   margin: 0;
   padding: 0;
