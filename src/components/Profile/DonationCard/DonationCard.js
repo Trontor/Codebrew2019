@@ -3,8 +3,8 @@ import "./DonationCard.css";
 
 const DonationCard = ({ info }) => {
   return (
-    <div class="col-6">
-      <div class="card card-block">
+    <div className="col-6">
+      <div className="card card-block">
         <div className="row">
           <div className="col-12">
             <span className="donation-title">{info.title}</span>
@@ -21,7 +21,7 @@ const DonationCard = ({ info }) => {
             </div>
           ))}
           <div className="col-12 text-center">
-            <a href="#" class="btn btn-success btn-sm">
+            <a href="#" className="btn btn-success btn-sm">
               Join ${info.cost} tier
             </a>
           </div>

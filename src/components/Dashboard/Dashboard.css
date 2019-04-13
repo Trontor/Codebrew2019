@@ -15,6 +15,11 @@
   position: absolute;
   top: 0;
 }
+
+#dashboard-root div {
+  padding-top: 20px;
+}
+
 .blurcontainer:child {
   -webkit-filter: blur(0);
   -moz-filter: blur(0);
@@ -22,11 +27,16 @@
   -ms-filter: blur(0);
   filter: blur(0);
 }
-.analyticscontainer {
-  padding-top: 20px;
-}
 .holder {
   background: rgba(255, 255, 255, 0.9);
   padding-top: 30px;
   border-radius: 4px;
+}
+
+#left-dash {
+  padding-right: 0px;
+}
+
+#right-dash {
+  padding-left: 0px;
 }

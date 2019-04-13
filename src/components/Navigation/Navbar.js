@@ -29,50 +29,53 @@ class Navbar extends Component {
           <span className="navbar-toggler-icon" />
         </button>
 
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-              <a class="nav-link" onClick={() => this.props.history.push("/")}>
+        <div className="collapse navbar-collapse" id="basicExampleNav">
+          <ul className="navbar-nav m-auto">
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                onClick={() => this.props.history.push("/")}
+              >
                 Home
                 <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 onClick={() => this.props.history.push("/local")}
               >
                 Nearby
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 onClick={() => this.props.history.push("/featured")}
               >
                 Featured
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 onClick={() => this.props.history.push("/dashboard")}
               >
                 Dashboard
               </a>
             </li>
-            {/* <li class="nav-item">
+            {/* <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 onClick={() => this.props.history.push("/profile")}
               >
                 Profiles
               </a>
             </li> */}
 
-            {/* <li class="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -81,26 +84,26 @@ class Navbar extends Component {
                 Dropdown
               </a>
               <div
-                class="dropdown-menu dropdown-primary"
+                className="dropdown-menu dropdown-primary"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Another action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Something else here
                 </a>
               </div>
             </li> */}
           </ul>
 
-          {/* <form class="form-inline">
-            <div class="md-form my-0">
+          {/* <form className="form-inline">
+            <div className="md-form my-0">
               <input
-                class="form-control mr-sm-2"
+                className="form-control mr-sm-2"
                 type="text"
                 placeholder="Search"
                 aria-label="Search"
@@ -108,10 +111,10 @@ class Navbar extends Component {
             </div>
           </form> */}
           <ul className="nav navbar-nav navbar-right">
-            {/* <li><a href="#"><span class="glyphicon glyphicon-user  ml-sm-2 mr-sm-2"></span> Sign Up</a></li> */}
+            {/* <li><a href="#"><span className="glyphicon glyphicon-user  ml-sm-2 mr-sm-2"></span> Sign Up</a></li> */}
             <li>
               <a href="/login">
-                <span class="glyphicon glyphicon-log-in  ml-sm-2  mr-sm-2" />{" "}
+                <span className="glyphicon glyphicon-log-in  ml-sm-2  mr-sm-2" />{" "}
                 Login
               </a>
             </li>

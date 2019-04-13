@@ -8,11 +8,11 @@ const Map = props => {
     return null;
   }
   return (
-    <div id="mapContainer" class="row">
-      <div class="col-md-7">
+    <div id="mapContainer" className="row">
+      <div className="col-md-7">
         <MapContainer profiles={props.profiles} />
       </div>
-      <div class="col-md-5">
+      <div className="col-md-5">
         <Sidebar profiles={props.profiles} />
       </div>
     </div>
