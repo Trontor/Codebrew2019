@@ -38,12 +38,12 @@ class Navbar extends Component {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Features
+                Map
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Pricing
+                Profiles
               </a>
             </li>
 
