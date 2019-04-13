@@ -31,6 +31,9 @@ class Login extends Component {
                     height="150px"
                   />
                   <p className="buskie">Buskie</p>
+                  <p id="login-subtitle">
+                    Supporting Melbourne's Street Artists
+                  </p>
                 </div>
                 <div className="card-body">
                   <h5 className="card-title text-center">Sign In</h5>

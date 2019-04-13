@@ -3,18 +3,22 @@
   --input-padding-y: 0.75rem;
 }
 
+#login-subtitle {
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  margin-bottom: 0px;
+}
 html,
-body, .container {
+body,
+.container {
   height: 100vh;
 }
-
-
 
 body {
   background: url("../../images/brickwall.png");
 }
-
-
 
 .buskie {
   font-size: 40px;
