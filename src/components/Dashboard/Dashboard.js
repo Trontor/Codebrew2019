@@ -30,9 +30,7 @@ export default class Example extends PureComponent {
               <div className="col-md-12 ">
                 <AverageEarning />
               </div>
-            </div>
-            <div className="col-12">
-              <div className="col-md-12 ">
+              <div className="col-12">
                 <QR />
               </div>
             </div>
@@ -42,6 +40,31 @@ export default class Example extends PureComponent {
           <div className="blurcontainer" />
           <div className=" row analyticscontainer">
             <div className="col-md-8  ">
+              <div className="col-md-12">
+                <div className="card text-center">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <p id="dash-name">Matt De Bono</p>
+                    </div>
+                    <div className="col-4">
+                      <img
+                        id="matt-image"
+                        class="card-img-top"
+                        src="https://media.licdn.com/dms/image/C4E03AQHLargWZPEmnA/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=J8uDYYz2WGa9eSFxG6pKfe2EgXEl8Q-Ul5cLNJQFoT4"
+                      />
+                    </div>
+                    <div className="col-8">
+                      <p>
+                        Matt De Bono is a lecturer at The University of
+                        Melbourne. Alongside his passion for C programming, he
+                        is a salsa dancing enthusiast. He hopes to build a
+                        career doing what he loves.
+                      </p>
+                      <a className="btn btn-success btn-sm">Edit Profile</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="col-md-12">
                 <div className="card">
                   <EarningGraph />
@@ -55,12 +78,8 @@ export default class Example extends PureComponent {
                 </div>
               </div>
             </div>
-            <div className="col-md-4  ">
-              <div className="col-md-12 ">
-                <AverageEarning />
-              </div>
-            </div>
-          </div>
+            <div className="col-md-4  " />
+            {/* </div>
           <div className="analyticscontainer row">
             <div className="col-md-6 ">
               <div className="col-md-12 " />
@@ -88,6 +107,7 @@ export default class Example extends PureComponent {
                 <Gencard />
               </div>
             </div>
+          </div>*/}
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import "./DonationCard.css";
 
 const DonationCard = ({ info }) => {
   return (
-    <div className="col-9">
+    <div className="col-lg-9 col-12">
       <div className="card card-block">
         <div className="row">
           <div className="col-12">

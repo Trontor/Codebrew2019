@@ -16,7 +16,7 @@
   top: 0;
 }
 
-#dashboard-root div {
+#dashboard-root > div {
   padding-top: 20px;
 }
 
@@ -39,4 +39,13 @@
 
 #right-dash {
   padding-left: 0px;
+}
+#matt-image {
+  width: 150px;
+  height: 150px;
+}
+
+#dash-name {
+  font-size: 30px;
+  font-weight: 600;
 }

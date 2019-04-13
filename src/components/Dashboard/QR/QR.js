@@ -7,7 +7,7 @@ const QR = () => {
     <div className="card">
       <div class="card-body text-center">
         <p className="card-title title text-success">QR Code</p>
-        <QRcode value="google.com" />
+        <QRcode value="http://localhost:3000/#/profile/7" />
       </div>
     </div>
   );
