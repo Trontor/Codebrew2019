@@ -12,7 +12,7 @@ const Cardlist = props => {
   }
   return (
     <div className="cardlist">
-      {props.profiles.map(val => (
+      {props.profiles.filter(x => x.live === "y").map(val => (
         <Card
           refURL={`/profile/${val.id - 1}`}
           name={val.name}
