@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar sticky navbar-expand-lg navbar-dark default-color">
+      <nav className="navbar  navbar-expand-lg navbar-dark default-color">
         <a className="navbar-brand" href="#">
           <img
             src={require("../../images/sombrero_wh.png")}
@@ -53,14 +53,14 @@ class Navbar extends Component {
                 Featured
               </a>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <a
                 class="nav-link"
                 onClick={() => this.props.history.push("/profile")}
               >
-                Profile
+                Profiles
               </a>
-            </li>
+            </li> */}
 
             {/* <li class="nav-item dropdown">
               <a

@@ -5,17 +5,9 @@ import DonationCard from "./DonationCard/DonationCard";
 class Profile extends Component {
   constructor(props) {
     super(props);
-    this.state = { profiles: [] };
+    this.state = { profiles: props.profiles };
   }
-  componentWillMount() {
-    const spreadsheetID = "1TCCq-MSPEEe5mCCTf5o263RNAdZ2M2gtZqDTu8hZhU8";
-    const apiKEY = "AIzaSyDulnk0TBfx_gude7ykM-YGr3cvkSj1f1w";
-    const URL = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetID}/values:batchGet?key=${apiKEY}&ranges=Sheet1&majorDimension=ROWS`;
-    console.log(URL);
-    fetch(URL)
-      .then(res => res.json())
-      .then(val => this.handleSpreadsheetData(val));
-  }
+
   titleCase = str => {
     str = str.toLowerCase();
     str = str.split(" ");
@@ -24,18 +16,21 @@ class Profile extends Component {
     }
     return str.join(" ");
   };
-  handleSpreadsheetData = json => {
-    const profiles = json.valueRanges[0].values;
-    profiles.shift();
-    this.setState({ profiles });
-  };
 
   render() {
     const {
-      match: { params }
+      match: { params },
+      profiles
     } = this.props;
-    const id = params.id;
-    const selectedProfile = this.state.profiles[id];
+    let id = params.id;
+
+    if (!profiles) {
+      return null;
+    }
+    if (id > profiles.length) {
+      id = 0;
+    }
+    const selectedProfile = profiles[id];
     if (!selectedProfile) {
       return null;
     }
