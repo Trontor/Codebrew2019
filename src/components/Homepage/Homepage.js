@@ -12,10 +12,10 @@ class Homepage extends Component {
             <div className="container text-center my-auto">
               <h1 className="mb-1">Buskers Make Melbourne</h1>
               <h3 className="mb-5">
-                <em>Support your local performers</em>
+                <em>Experience the local talent</em>
               </h3>
               <a className="btn btn-primary btn-xl js-scroll-trigger" href="/local">
-                Find local performers
+                Find buskers near me
               </a>
             </div>
             <div className="overlay" />
@@ -56,7 +56,16 @@ class Homepage extends Component {
                   <h4>
                     <strong>Search</strong>
                   </h4>
-                  <p className="text-faded mb-0">Find your favourite buskers</p>
+                  <p className="text-faded mb-0">Explore the local talent</p>
+                </div>
+                <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
+                  <span className="service-icon rounded-circle mx-auto mb-3">
+                    <i className="far fa-thumbs-up" />
+                  </span>
+                  <h4>
+                    <strong>Favorited</strong>
+                  </h4>
+                  <p className="text-faded mb-0">Follow your buskers of choice</p>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
                   <span className="service-icon rounded-circle mx-auto mb-3">
@@ -67,15 +76,6 @@ class Homepage extends Component {
                   </h4>
                   <p className="text-faded mb-0">Support your favourite buskers</p>
                 </div>
-                <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
-                  <span className="service-icon rounded-circle mx-auto mb-3">
-                    <i className="far fa-thumbs-up" />
-                  </span>
-                  <h4>
-                    <strong>Favorited</strong>
-                  </h4>
-                  <p className="text-faded mb-0">Follow your favourite buskers</p>
-                </div>
                 <div className="col-lg-3 col-md-6">
                   <span className="service-icon rounded-circle mx-auto mb-3">
                     <i className="far fa-comment" />
@@ -84,7 +84,7 @@ class Homepage extends Component {
                     <strong>Social</strong>
                   </h4>
                   <p className="text-faded mb-0">
-                    Get to know your favourite buskers
+                    Connect and get to know them
                   </p>
                 </div>
               </div>
@@ -95,11 +95,8 @@ class Homepage extends Component {
           <section className="content-section" id="portfolio">
             <div className="container-fluid">
               <div className="content-section-heading text-center">
-                <h3 className="mb-0" style={{ color: "black" }}>
-                  Culture
-                </h3>
                 <h2 className="mb-5" style={{ color: "white" }}>
-                  Melbourne
+                  Experience Melbourne's Culture and Soul
                 </h2>
               </div>
               <div
@@ -125,15 +122,15 @@ class Homepage extends Component {
                 <div className="carousel-inner" role="listbox">
                   <div className="carousel-item active" id="image_1">
                     <div className="carousel-caption d-none d-md-block">
-                      <h3 className="display-4">Street Performer</h3>
-                      <p className="lead">Placeholder text</p>
+                      <h3 className="display-4">Bourke Street Mall</h3>
+                      <p className="lead">Melbourne's Music hub</p>
                     </div>
                   </div>
                   <div className="carousel-item" id="image_2">
                     <div className="carousel-caption d-none d-md-block">
                       <h3 className="display-4">Hardware Lane</h3>
                       <p className="lead">
-                        Melbourne's classNameiest, most European laneway
+                        The melting pot of cultures
                       </p>
                     </div>
                   </div>
