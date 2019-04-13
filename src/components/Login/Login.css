@@ -35,6 +35,10 @@ body::after {
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
+.row {
+  margin: 0;
+}
+
 .card-signin .card-title {
   margin-bottom: 2rem;
   font-weight: 300;
@@ -51,6 +55,7 @@ body::after {
 
 .login-container {
   height: 100%;
+  width: 100%;
 }
 
 .form-signin .btn {

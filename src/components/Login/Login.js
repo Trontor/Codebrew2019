@@ -19,7 +19,7 @@ class Login extends Component {
     return (
       <>
         <div className="login-container">
-          <div className="row h-100 row align-items-center">
+          <div className="row h-100">
             <div className="col-sm-9 col-md-7 col-lg-5 mx-auto my-auto">
               <div className="card card-signin my-3">
                 <div
