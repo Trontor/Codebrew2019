@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-dark default-color">
+      <nav class="navbar sticky navbar-expand-lg navbar-dark default-color">
         <a class="navbar-brand" href="#">
           <img
             src={require("../../images/sombrero_wh.png")}
@@ -37,8 +37,8 @@ class Navbar extends Component {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/map">
-                Map
+              <a class="nav-link" href="/local">
+                Local
               </a>
             </li>
             <li class="nav-item">
