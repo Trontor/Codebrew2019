@@ -10,8 +10,12 @@ export default class AverageEarning extends Component {
           <h5 className="card-title title text-success">Total Earning</h5>
 
           {/* <img src={dollar} className="dollarimage mx-auto" /> */}
-          <h1 className="d-inline avgearning px-3">{"    $"}1340</h1>
-          <p>from 1547 patrons</p>
+          <h1 className="d-inline avgearning px-3">{"    $"}3746</h1>
+          <p>
+            per dance
+            <br />
+            from 1547 patrons{" "}
+          </p>
         </div>
 
         <div className="card-footer">
