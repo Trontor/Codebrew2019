@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -28,26 +29,35 @@ class Navbar extends Component {
           <span className="navbar-toggler-icon" />
         </button>
 
-        <div className="collapse navbar-collapse" id="basicExampleNav">
-          <ul className="navbar-nav m-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="/">
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" onClick={() => this.props.history.push("/")}>
                 Home
                 <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/local">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onClick={() => this.props.history.push("/local")}
+              >
                 Local
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/featured">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onClick={() => this.props.history.push("/featured")}
+              >
                 Featured
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/profile">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onClick={() => this.props.history.push("/profile")}
+              >
                 Profile
               </a>
             </li>
@@ -91,7 +101,12 @@ class Navbar extends Component {
           </form> */}
           <ul className="nav navbar-nav navbar-right">
             {/* <li><a href="#"><span class="glyphicon glyphicon-user  ml-sm-2 mr-sm-2"></span> Sign Up</a></li> */}
-            <li><a href="/login"><span className="glyphicon glyphicon-log-in  ml-sm-2  mr-sm-2"></span> Login</a></li>
+            <li>
+              <a href="/login">
+                <span class="glyphicon glyphicon-log-in  ml-sm-2  mr-sm-2" />{" "}
+                Login
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -99,4 +114,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);

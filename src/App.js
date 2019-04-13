@@ -10,13 +10,9 @@ class App extends Component {
   render() {
     return (
       <>
-        <Navbar />
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/"}
-            component={Homepage}
-          />
+          <Navbar />
+          <Route exact path="/" component={Homepage} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/local" component={Map} />
         </BrowserRouter>

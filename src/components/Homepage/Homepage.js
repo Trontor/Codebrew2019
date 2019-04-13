@@ -1,5 +1,6 @@
 import "./Homepage.css";
 import React, { Component } from "react";
+import Navbar from "../Navigation/Navbar";
 
 class Homepage extends Component {
   render() {
