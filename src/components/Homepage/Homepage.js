@@ -26,8 +26,9 @@ class Homepage extends Component {
             <div className="container text-center">
               <div className="row">
                 <div className="col-lg-10 mx-auto">
-                  <h2>About Buskie Title Placeholder</h2>
-                  <p className="lead mb-5">About Buskie paragraph</p>
+                  <h2>About Buskie</h2>
+                  <p className="lead mb-5">Can't fine that cool juggler outside Melbourne Central or want more of the groovy beat next to Flinders?  Buskie is the place for you.
+                   Buskie allows you to search your neighbourhood for busksers so that you can connect with and support those dang awesome people</p>
                   <a
                     className="btn btn-dark btn-xl js-scroll-trigger"
                     href="#services"
