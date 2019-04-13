@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar/Sidebar";
 
 const Map = () => {
   return (
-    <div id="mapContainer" class="row w-100 h-100">
+    <div id="mapContainer" class="row">
       <div class="col-md-9">
         <MapContainer />
       </div>

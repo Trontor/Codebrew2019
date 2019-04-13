@@ -18,7 +18,7 @@ class Login extends Component {
   render() {
     return (
       <>
-        <div className="container">
+        <div className="login-container">
           <div className="row h-100 row align-items-center">
             <div className="col-sm-9 col-md-7 col-lg-5 mx-auto my-auto">
               <div className="card card-signin my-3">

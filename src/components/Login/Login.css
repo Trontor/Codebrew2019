@@ -10,10 +10,9 @@
   font-style: italic;
   margin-bottom: 0px;
 }
-html,
-body,
-.container {
-  height: 100vh;
+
+.login-container {
+
 }
 
 body {
