@@ -26,9 +26,9 @@ class Homepage extends Component {
             <div className="container text-center">
               <div className="row">
                 <div className="col-lg-10 mx-auto">
-                  <h2>About Buskie</h2>
-                  <p className="lead mb-5">Can't fine that cool juggler outside Melbourne Central or want more of the groovy beat next to Flinders?  Buskie is the place for you.
-                   Buskie allows you to search your neighbourhood for busksers so that you can connect with and support those dang awesome people</p>
+                  <h2>About buskie</h2>
+                  <p className="lead mb-5">Can't fine that cool juggler outside Melbourne Central or want more of the groovy beat next to Flinders?  buskie is the place for you.
+                   buskie allows you to search your neighbourhood for buskers so that you can connect with and support those dang awesome people</p>
                   <a
                     className="btn btn-dark btn-xl js-scroll-trigger"
                     href="#services"
@@ -46,8 +46,8 @@ class Homepage extends Component {
             {/* Support buskers */}
             <div className="container">
               <div className="content-section-heading">
-                <h3 className="text-secondary mb-0">Fans</h3>
-                <h2 className="mb-5">Buskers</h2>
+                <h3 className="text-secondary ">buskie</h3>
+                <h2 className="mb-5">For Fans</h2>
               </div>
               <div className="row">
                 <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -91,6 +91,59 @@ class Homepage extends Component {
               </div>
             </div>
           </section>
+          <section
+            className="content-section text-white text-center"
+            id="services"
+          >
+            {/* For Buskers */}
+            <div className="container">
+              <div className="content-section-heading">
+                <h3 className="text-secondary mb-0">buskie</h3>
+                <h2 className="mb-5">For Buskers</h2>
+              </div>
+              <div className="row">
+                <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                  <span className="service-icon rounded-circle mx-auto mb-3">
+                    <i className="fa fa-location-arrow" />
+                  </span>
+                  <h4>
+                    <strong>Live</strong>
+                  </h4>
+                  <p className="text-faded mb-0">Let people find you in real time</p>
+                </div>
+                <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
+                  <span className="service-icon rounded-circle mx-auto mb-3">
+                    <i className="fas fa-arrow-up" />
+                  </span>
+                  <h4>
+                    <strong>Exposure</strong>
+                  </h4>
+                  <p className="text-faded mb-0">Increase your fan base</p>
+                </div>
+                <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                  <span className="service-icon rounded-circle mx-auto mb-3">
+                    <i class="fas fa-credit-card" />
+                  </span>
+                  <h4>
+                    <strong>Cashless</strong>
+                  </h4>
+                  <p className="text-faded mb-0">Recieve electronic payments</p>
+                </div>
+                <div className="col-lg-3 col-md-6">
+                  <span className="service-icon rounded-circle mx-auto mb-3">
+                    <i class="fas fa-chart-area" />
+                  </span>
+                  <h4>
+                    <strong>Growth</strong>
+                  </h4>
+                  <p className="text-faded mb-0">
+                    Get an overview of your progress
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
 
           {/* Portfolio */}
           <section className="content-section" id="portfolio">
