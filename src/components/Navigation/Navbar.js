@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-dark default-color">
+      <nav class="navbar sticky navbar-expand-lg navbar-dark default-color">
         <a class="navbar-brand" href="#">
           <img
             src={require("../../images/sombrero_wh.png")}

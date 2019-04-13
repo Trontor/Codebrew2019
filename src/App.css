@@ -2,6 +2,6 @@
   font-family: 'Nunito', sans-serif;
 }
 
-#root {
+#root, html, body {
   height: 100%;
 }
