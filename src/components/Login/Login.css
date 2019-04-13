@@ -7,6 +7,22 @@ body {
   background: url("../../images/brickwall.png");
 }
 
+.buskie {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+body::after {
+  content: "";
+  opacity: 0.95;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 .card-signin {
   border: 0;
   border-radius: 1rem;
