@@ -20,19 +20,23 @@ self.__precacheManifest = [
     "url": "/Codebrew2019/static/js/runtime~main.65fbc26d.js"
   },
   {
-    "revision": "2cf6c2a807ac60d04de1",
-    "url": "/Codebrew2019/static/js/main.69b3928e.chunk.js"
+    "revision": "bc11c7ef7f92bbeea007",
+    "url": "/Codebrew2019/static/js/main.04209e1a.chunk.js"
   },
   {
-    "revision": "f98e8df16e70bff4bb60",
-    "url": "/Codebrew2019/static/js/2.3c000303.chunk.js"
+    "revision": "016139f22b351df86eae",
+    "url": "/Codebrew2019/static/js/2.f8514394.chunk.js"
   },
   {
-    "revision": "2cf6c2a807ac60d04de1",
-    "url": "/Codebrew2019/static/css/main.fe1d540e.chunk.css"
+    "revision": "bc11c7ef7f92bbeea007",
+    "url": "/Codebrew2019/static/css/main.8660435b.chunk.css"
   },
   {
-    "revision": "fc390fc1237dc802d0bf12d91f63f1be",
+    "revision": "016139f22b351df86eae",
+    "url": "/Codebrew2019/static/css/2.c8908a3d.chunk.css"
+  },
+  {
+    "revision": "61e7746765c58e18b82781ea26d9a6d7",
     "url": "/Codebrew2019/index.html"
   }
 ];
