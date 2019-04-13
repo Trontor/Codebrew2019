@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.46761319.chunk.css",
-  "main.js": "/static/js/main.98498910.chunk.js",
-  "main.js.map": "/static/js/main.98498910.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.33f5a116.chunk.js": "/static/js/2.33f5a116.chunk.js",
-  "static/js/2.33f5a116.chunk.js.map": "/static/js/2.33f5a116.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.f5f0157ec84b97b07f20ccd4bbbba6ab.js": "/precache-manifest.f5f0157ec84b97b07f20ccd4bbbba6ab.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.46761319.chunk.css.map": "/static/css/main.46761319.chunk.css.map",
-  "static/media/Homepage.css": "/static/media/masthead.eebf004e.jpg"
+  "main.css": "/codebrew2019/static/css/main.3a14f986.chunk.css",
+  "main.js": "/codebrew2019/static/js/main.61b3555a.chunk.js",
+  "main.js.map": "/codebrew2019/static/js/main.61b3555a.chunk.js.map",
+  "runtime~main.js": "/codebrew2019/static/js/runtime~main.1a642c3e.js",
+  "runtime~main.js.map": "/codebrew2019/static/js/runtime~main.1a642c3e.js.map",
+  "static/js/2.33f5a116.chunk.js": "/codebrew2019/static/js/2.33f5a116.chunk.js",
+  "static/js/2.33f5a116.chunk.js.map": "/codebrew2019/static/js/2.33f5a116.chunk.js.map",
+  "index.html": "/codebrew2019/index.html",
+  "precache-manifest.b2243c2c39db81cffa2e2035871f9069.js": "/codebrew2019/precache-manifest.b2243c2c39db81cffa2e2035871f9069.js",
+  "service-worker.js": "/codebrew2019/service-worker.js",
+  "static/css/main.3a14f986.chunk.css.map": "/codebrew2019/static/css/main.3a14f986.chunk.css.map",
+  "static/media/Homepage.css": "/codebrew2019/static/media/masthead.eebf004e.jpg"
 }
