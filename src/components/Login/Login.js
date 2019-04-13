@@ -1,8 +1,18 @@
 import "./Login.css";
 import React, { Component } from "react";
+
 import Facebook from "../Facebook/Facebook";
 
 class Login extends Component {
+  handleSubmit = e => {
+    console.log("test");
+    this.props.history.push("/login");
+    e.preventDefault();
+  };
+  componentDidMount() {
+    document.getElementById("inputEmail").value = "rohyljoshi@hotmail.com";
+    document.getElementById("inputPassword").value = "tester12urfnjw";
+  }
   render() {
     return (
       <>
@@ -25,7 +35,7 @@ class Login extends Component {
                 </div>
                 <div className="card-body">
                   <h5 className="card-title text-center">Sign In</h5>
-                  <form className="form-signin">
+                  <form className="form-signin" onSubmit={this.handleSubmit}>
                     <div className="form-label-group">
                       <input
                         type="email"
