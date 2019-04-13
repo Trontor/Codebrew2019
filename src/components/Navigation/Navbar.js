@@ -37,8 +37,8 @@ class Navbar extends Component {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/map">
-                Map
+              <a class="nav-link" href="/local">
+                Local
               </a>
             </li>
             <li class="nav-item">
