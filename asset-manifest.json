@@ -1,14 +1,14 @@
 {
-  "main.css": "/Codebrew2019/static/css/main.6fd1d436.chunk.css",
-  "main.js": "/Codebrew2019/static/js/main.4f365dba.chunk.js",
-  "main.js.map": "/Codebrew2019/static/js/main.4f365dba.chunk.js.map",
+  "main.css": "/Codebrew2019/static/css/main.79ec43ff.chunk.css",
+  "main.js": "/Codebrew2019/static/js/main.368198c8.chunk.js",
+  "main.js.map": "/Codebrew2019/static/js/main.368198c8.chunk.js.map",
   "runtime~main.js": "/Codebrew2019/static/js/runtime~main.65fbc26d.js",
   "runtime~main.js.map": "/Codebrew2019/static/js/runtime~main.65fbc26d.js.map",
-  "static/js/2.c14450cd.chunk.js": "/Codebrew2019/static/js/2.c14450cd.chunk.js",
-  "static/js/2.c14450cd.chunk.js.map": "/Codebrew2019/static/js/2.c14450cd.chunk.js.map",
+  "static/js/2.96864fce.chunk.js": "/Codebrew2019/static/js/2.96864fce.chunk.js",
+  "static/js/2.96864fce.chunk.js.map": "/Codebrew2019/static/js/2.96864fce.chunk.js.map",
   "index.html": "/Codebrew2019/index.html",
-  "precache-manifest.c2c290fcafce3a7744e1002981941fb3.js": "/Codebrew2019/precache-manifest.c2c290fcafce3a7744e1002981941fb3.js",
+  "precache-manifest.8808065f86b60f7f0ab33bdd58e7280d.js": "/Codebrew2019/precache-manifest.8808065f86b60f7f0ab33bdd58e7280d.js",
   "service-worker.js": "/Codebrew2019/service-worker.js",
-  "static/css/main.6fd1d436.chunk.css.map": "/Codebrew2019/static/css/main.6fd1d436.chunk.css.map",
+  "static/css/main.79ec43ff.chunk.css.map": "/Codebrew2019/static/css/main.79ec43ff.chunk.css.map",
   "static/media/Homepage.css": "/Codebrew2019/static/media/masthead.eebf004e.jpg"
 }
