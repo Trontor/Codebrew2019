@@ -6,7 +6,7 @@ import Facebook from "../Facebook/Facebook";
 class Login extends Component {
   handleSubmit = e => {
     console.log("test");
-    this.props.history.push("/login");
+    this.props.history.push("/map");
     e.preventDefault();
   };
   componentDidMount() {
@@ -18,9 +18,7 @@ class Login extends Component {
       <>
         <div className="container">
           <div className="row h-100 row align-items-center">
-            <div
-              className="col-sm-9 col-md-7 col-lg-5 mx-auto my-auto"
-            >
+            <div className="col-sm-9 col-md-7 col-lg-5 mx-auto my-auto">
               <div className="card card-signin my-3">
                 <div
                   className="col-12 text-center"
