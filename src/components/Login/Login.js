@@ -78,7 +78,10 @@ class Login extends Component {
                       className="btn btn-lg btn-info btn-block text-uppercase"
                       type="submit"
                     >
-                    <i class="fas fa-sign-in-alt" style={{marginRight: "10px"}}></i>
+                      <i
+                        class="fas fa-sign-in-alt"
+                        style={{ marginRight: "10px" }}
+                      />
                       Sign in
                     </button>
                     <hr className="my-4" />
