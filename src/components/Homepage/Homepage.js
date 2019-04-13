@@ -26,9 +26,9 @@ class Homepage extends Component {
             <div className="container text-center">
               <div className="row">
                 <div className="col-lg-10 mx-auto">
-                  <h2>About Buskie</h2>
-                  <p className="lead mb-5">Can't fine that cool juggler outside Melbourne Central or want more of the groovy beat next to Flinders?  Buskie is the place for you.
-                   Buskie allows you to search your neighbourhood for busksers so that you can connect with and support those dang awesome people</p>
+                  <h2>About buskie</h2>
+                  <p className="lead mb-5">Can't fine that cool juggler outside Melbourne Central or want more of the groovy beat next to Flinders?  buskie is the place for you.
+                   buskie allows you to search your neighbourhood for buskers so that you can connect with and support those dang awesome people</p>
                   <a
                     className="btn btn-dark btn-xl js-scroll-trigger"
                     href="#services"
@@ -46,7 +46,7 @@ class Homepage extends Component {
             {/* Support buskers */}
             <div className="container">
               <div className="content-section-heading">
-                <h3 className="text-secondary mb-0">Buskie</h3>
+                <h3 className="text-secondary ">buskie</h3>
                 <h2 className="mb-5">For Fans</h2>
               </div>
               <div className="row">
@@ -98,7 +98,7 @@ class Homepage extends Component {
             {/* For Buskers */}
             <div className="container">
               <div className="content-section-heading">
-                <h3 className="text-secondary mb-0">Buskie</h3>
+                <h3 className="text-secondary mb-0">buskie</h3>
                 <h2 className="mb-5">For Buskers</h2>
               </div>
               <div className="row">

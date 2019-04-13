@@ -14,7 +14,7 @@ class Navbar extends Component {
           />
         </a>
         <a className="navbar-brand" href="#">
-          Buskie
+          buskie
         </a>
 
         <button
