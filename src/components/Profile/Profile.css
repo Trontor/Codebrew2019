@@ -4,7 +4,9 @@
 #donation-container {
   overflow: auto;
 }
-
+.profile-desc-segment {
+  text-align: justify;
+}
 .img-thumbnail {
   height: 150px;
   width: 150px;

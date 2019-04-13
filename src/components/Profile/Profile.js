@@ -39,13 +39,14 @@ class Profile extends Component {
     if (!selectedProfile) {
       return null;
     }
-    let name, job, location, imageURL, lat, long;
+    let name, job, location, imageURL, lat, long, desc;
     name = selectedProfile[1];
     job = selectedProfile[2];
     location = selectedProfile[3];
     imageURL = selectedProfile[4];
     lat = selectedProfile[5];
     long = selectedProfile[6];
+    desc = selectedProfile[7];
     console.log(selectedProfile);
     let profile = this.props.src
       ? this.props.src
@@ -82,9 +83,6 @@ class Profile extends Component {
           <div class="card">Card</div>
         </div> */}
         <div class="card m-auto col-lg-4 col-md-6 col-sm-12 text-center">
-          <div class="row">
-            <div class="col-lg-12 col-sm-12 col-12 profile-header" />
-          </div>
           <div class="row user-detail">
             <div class="col-lg-12 col-sm-12 col-12">
               <img
@@ -95,26 +93,17 @@ class Profile extends Component {
               <h5>{name}</h5>
               <p>
                 <i class="fa fa-map-marker" aria-hidden="true" />{" "}
-                {this.titleCase(location)}
+                {this.titleCase(job)}, {this.titleCase(location)}
               </p>
-
               <hr />
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                convallis vitae mi eu cursus. Aenean lacus libero, malesuada
-                interdum efficitur quis, tincidunt vitae elit. Ut in magna non
-                libero malesuada euismod. Morbi sodales imperdiet nibh, non
-                consectetur odio tristique sit amet. Morbi maximus, magna vel
-                pellentesque iaculis, dui mauris fermentum metus, ac egestas
-                ipsum felis vitae tellus. Suspendisse sit amet nibh purus. Nulla
-                convallis augue ligula, vel luctus nisi hendrerit id. Donec
-                mattis leo diam. Nullam in risus nibh. Donec tincidunt efficitur
-                semper. Fusce semper urna non turpis fringilla, et pharetra mi
-                ornare. Nunc ultricies luctus purus, sit amet cursus felis
-                pharetra nec. Donec ut placerat mi. Curabitur ut leo sapien.
-                Fusce lobortis lectus sed purus faucibus aliquet. Fusce faucibus
-                orci in purus congue, nec fermentum turpis porta. Mauris
-                scelerisque pellentesque elit, in tincidunt augue aliquam non.
+                {desc.split("\n").map((item, i) => {
+                  return (
+                    <p className="profile-desc-segment" key={i}>
+                      {item}
+                    </p>
+                  );
+                })}
               </span>
               <hr />
               <div id="donation-container" class="container-fluid">
