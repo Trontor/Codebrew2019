@@ -8,7 +8,7 @@ class Homepage extends Component {
         <body id="homepage_body">
           {/* Header */}
           <header class="masthead d-flex">
-            <div class="container-home text-center my-auto">
+            <div class="container text-center my-auto">
               <h1 class="mb-1">Buskie</h1>
               <h3 class="mb-5">
                 <em>Sentence description of buskie</em>
@@ -22,7 +22,7 @@ class Homepage extends Component {
 
           {/* About */}
           <section class="content-section bg-light" id="about">
-            <div class="container-home text-center">
+            <div class="container text-center">
               <div class="row">
                 <div class="col-lg-10 mx-auto">
                   <h2>About Buskie Title Placeholder</h2>
@@ -41,7 +41,8 @@ class Homepage extends Component {
             class="content-section bg-primary text-white text-center"
             id="services"
           >
-            <div class="container-home">
+            {/* Support buskers */}
+            <div class="container">
               <div class="content-section-heading">
                 <h3 class="text-secondary mb-0">Fans</h3>
                 <h2 class="mb-5">Buskers</h2>
@@ -91,7 +92,7 @@ class Homepage extends Component {
 
           {/* Portfolio */}
           <section class="content-section" id="portfolio">
-            <div class="container-home-fluid">
+            <div class="container-fluid">
               <div class="content-section-heading text-center">
                 <h3 class="mb-0" style={{ color: "black" }}>
                   Culture

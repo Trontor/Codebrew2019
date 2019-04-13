@@ -111,7 +111,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: #1d809f;
+  color: #da6b03;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -191,7 +191,7 @@ a:active {
 }
 
 .bg-primary {
-  background-color: #1d809f !important;
+  background-color: #da6b03 !important;
 }
 
 .text-primary {
@@ -215,16 +215,16 @@ a:active {
 }
 
 #image_1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../../images/image2.jpg");
 }
 
 #image_2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../../images/image1.jpg");
 }
 
 #image_3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../../images/image3.jpg");
 }
