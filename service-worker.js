@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Trontor/codebrew2019/precache-manifest.6f64e4d0c3b34fe9c5002a89883128df.js"
+  "/codebrew2019/precache-manifest.fe89344e8cc7ac957bdc9b61b28c4d75.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Trontor/codebrew2019/index.html", {
+workbox.routing.registerNavigationRoute("/codebrew2019/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
