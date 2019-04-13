@@ -9,7 +9,7 @@ class Login extends Component {
     e.preventDefault();
   };
   nextPage = () => {
-    this.props.history.push("/map");
+    this.props.history.push("/local");
   };
   componentDidMount() {
     document.getElementById("inputEmail").value = "rohyljoshi@hotmail.com";

@@ -47,8 +47,8 @@ class Navbar extends Component {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/now">
-                On Now
+              <a class="nav-link" href="/profile">
+                Profile
               </a>
             </li>
 

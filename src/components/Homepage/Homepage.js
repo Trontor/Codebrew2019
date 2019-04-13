@@ -13,8 +13,8 @@ class Homepage extends Component {
               <h3 class="mb-5">
                 <em>Sentence description of buskie</em>
               </h3>
-              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">
-                Find Out More
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="/local">
+                Find local performers
               </a>
             </div>
             <div class="overlay" />

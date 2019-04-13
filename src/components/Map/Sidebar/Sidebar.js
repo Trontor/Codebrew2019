@@ -8,7 +8,7 @@ import Cardlist from './Cardlist/Cardlist.js';
 const Sidebar = () => {
   return (
     <>
-      <div className="container">
+      <div className="sidebar">
         <h2 className="sidebar-head">Busking Now</h2>
         <div className="sidebar"><Cardlist></Cardlist></div>
       </div>
