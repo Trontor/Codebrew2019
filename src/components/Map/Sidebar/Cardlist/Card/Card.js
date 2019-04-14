@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 import { withRouter } from "react-router";
 
-const Card = props => {
+const Card = props => {  
   return (
     <div className="card">
       <div className="row ">
@@ -26,6 +26,8 @@ const Card = props => {
           >
             Profile
           </a>
+          <a className="btn btn-red"
+            href={"http://maps.google.com/maps?daddr=" + props.lat + "," + props.long + "&amp;ll="}><i class="fas fa-map-marker-alt"></i></a>
         </div>
       </div>
     </div>
