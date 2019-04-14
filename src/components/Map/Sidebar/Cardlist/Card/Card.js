@@ -2,6 +2,15 @@ import React from "react";
 import "./Card.css";
 import { withRouter } from "react-router";
 
+function titleCase(str) {
+  str = str.toLowerCase();
+  str = str.split(" ");
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+  }
+  return str.join(" ");
+};
+
 const Card = props => {  
   return (
     <div className="card">
@@ -15,7 +24,7 @@ const Card = props => {
               <h4 className="card-title">{props.name}</h4>{" "}
             </div>
             <div className="col-12 info">
-              <p>{props.job}</p>  
+              <p>{titleCase(props.job)}</p>  
               <p>{props.distance}m away</p>
             </div>
           </div>
