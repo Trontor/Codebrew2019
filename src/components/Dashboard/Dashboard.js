@@ -20,8 +20,14 @@ export default class Example extends PureComponent {
 
   MdAdd = () => {
     return (
-      <a onClick={() => this.setState({ live: true, time: new Date() })}>
-        Go Live
+      <a
+        onClick={() => {
+          if (this.state.live) {
+            this.setState({ live: false });
+          } else this.setState({ live: true, time: new Date() });
+        }}
+      >
+        {this.state.live ? "Stop Live" : "Go Live"}
       </a>
     );
   };
