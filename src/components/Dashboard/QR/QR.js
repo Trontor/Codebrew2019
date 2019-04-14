@@ -8,7 +8,7 @@ const QR = () => {
       <div class="card-body text-center">
         <p className="card-title title text-success">QR Code</p>
         <img className="qr" src={require("../../../images/qr.png")}/>
-        <button type="button" class="btn btn-primary"><i class="far fa-file"></i>  download flyer</button>
+        <button type="button" class="btn btn-primary" ><i class="far fa-file"></i>  download flyer</button>
       </div>
     </div>
   );

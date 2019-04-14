@@ -2,7 +2,8 @@
   margin: 0 auto;
 }
 #donation-container {
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .profile-desc-segment {
   text-align: justify;
