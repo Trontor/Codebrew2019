@@ -12,15 +12,19 @@ const Cardlist = props => {
   }
   return (
     <div className="cardlist">
-      {props.profiles.filter(x => x.live === "y").map(val => (
-        <Card
-          refURL={`/profile/${val.id - 1}`}
-          name={val.name}
-          job={val.job}
-          distance={val.distance}
-          src={val.imageURL}
-        />
-      ))}
+      {props.profiles
+        .filter(x => x.live === "y")
+        .sort(x => x.distance)
+        .reverse()
+        .map(val => (
+          <Card
+            refURL={`/profile/${val.id - 1}`}
+            name={val.name}
+            job={val.job}
+            distance={val.distance}
+            src={val.imageURL}
+          />
+        ))}
     </div>
   );
 };

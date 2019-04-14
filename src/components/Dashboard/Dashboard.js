@@ -15,12 +15,12 @@ const divStyle = {
   background: "#2bbbad"
 };
 // Text for Go Live button
-const MdAdd = () => {
-  return <div>Go Live</div>;
-};
 export default class Example extends PureComponent {
   static jsfiddleUrl = "https://jsfiddle.net/alidingling/w6wsrc52/";
 
+  MdAdd = () => {
+    return <a onClick={this.props.goLive}>Go Live</a>;
+  };
   render() {
     return (
       <div className="row" id="dashboard-root">
@@ -72,7 +72,7 @@ export default class Example extends PureComponent {
                     mainButtonStyles={divStyle}
                     //actionButtonStyles={actionButtonStyles}
                     //position={position}
-                    icon={<MdAdd />}
+                    icon={this.MdAdd()}
                     //event={event}
                   />
                 </div>

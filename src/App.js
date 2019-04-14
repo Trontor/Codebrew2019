@@ -6,6 +6,7 @@ import { HashRouter, Route } from "react-router-dom";
 import Map from "./components/Map/Map";
 import Homepage from "./components/Homepage/Homepage";
 import Profile from "./components/Profile/Profile";
+import axios from "axios";
 import Dashboard from "./components/Dashboard/Dashboard";
 
 class App extends Component {
@@ -53,18 +54,33 @@ class App extends Component {
   };
   componentWillMount() {
     const spreadsheetID = "1TCCq-MSPEEe5mCCTf5o263RNAdZ2M2gtZqDTu8hZhU8";
-    const apiKEY = "AIzaSyDulnk0TBfx_gude7ykM-YGr3cvkSj1f1w";
+    const apiKEY = "AIzaSyCFERBzLDWtOuCyokpgIN3izhT8wokMG28";
     const URL = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetID}/values:batchGet?key=${apiKEY}&ranges=Sheet1&majorDimension=ROWS`;
     console.log(URL);
     fetch(URL)
       .then(res => res.json())
       .then(val => this.handleSpreadsheetData(val));
   }
+  goLive = () => {
+    const spreadsheetID = "1TCCq-MSPEEe5mCCTf5o263RNAdZ2M2gtZqDTu8hZhU8";
+    const apiKEY = "AIzaSyCFERBzLDWtOuCyokpgIN3izhT8wokMG28";
+    const updateURL = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetID}/values/I8?key=${apiKEY}`;
+    axios
+      .put(updateURL, {
+        values: [[1]]
+      })
+      .then(val => console.log(val))
+      .catch(err => console.log(err));
+  };
   customProfile = props => {
     return <Profile profiles={this.state.profiles} {...props} />;
   };
   customMap = props => {
     return <Map profiles={this.state.profiles} {...props} />;
+  };
+
+  customDashboard = props => {
+    return <Dashboard {...props} goLive={this.goLive} />;
   };
   render() {
     return (
@@ -76,7 +92,7 @@ class App extends Component {
           <Route exact path="/local" component={this.customMap} />
 
           {process.env.NODE_ENV === "development" ? (
-            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/dashboard" component={this.customDashboard} />
           ) : null}
           <Route exact path="/profile/:id" component={this.customProfile} />
         </HashRouter>

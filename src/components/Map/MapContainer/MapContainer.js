@@ -30,13 +30,15 @@ class SimpleMap extends Component {
           defaultZoom={this.props.zoom}
         >
           <AnyReactComponent lat={-37.8138} lng={144.9646} text="My Marker" />
-          {this.props.profiles.filter(x=> x.live === "y").map(val => (
-            <AnyReactComponent
-              imgsrc={val.imageURL}
-              lat={val.lat}
-              lng={val.long}
-            />
-          ))}
+          {this.props.profiles
+            .filter(x => x.live === "y")
+            .map(val => (
+              <AnyReactComponent
+                imgsrc={val.imageURL}
+                lat={val.lat}
+                lng={val.long}
+              />
+            ))}
         </GoogleMapReact>
       </div>
     );
