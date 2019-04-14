@@ -4,3 +4,7 @@
     overflow: scroll;
     
 }
+
+.cardlist .col-md-2 {
+    padding: 0px;
+}

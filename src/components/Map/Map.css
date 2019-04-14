@@ -1,6 +1,6 @@
 #mapContainer {
-  height: 100%;
   width: 100%;
+  height: calc(100% - 4em);
 }
 
 #mapContainer .col-md-3 {
@@ -11,4 +11,5 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
