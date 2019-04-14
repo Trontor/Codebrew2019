@@ -1,6 +1,6 @@
 import React from "react";
 import "./DonationCard.css";
-
+import StripeCheckout from "react-stripe-checkout";
 const DonationCard = ({ info }) => {
   return (
     <div className="col-lg-9 col-12">
@@ -21,9 +21,21 @@ const DonationCard = ({ info }) => {
             </div>
           ))}
           <div className="col-12 text-center">
-            <a href="#" className="btn btn-success btn-sm">
-              Join ${info.cost} tier
-            </a>
+            <StripeCheckout
+              amount={info.cost * 100}
+              billingAddress
+              description={"Support this artist"}
+              image={require("../../../images/sombrero.png")}
+              locale="auto"
+              name="Buskie"
+              stripeKey="pk_test_B99vYtSnYSRsjN3YnHowMagJ00YsELVzyu"
+              token={() => {
+                console.log("");
+              }}
+              zipCode
+            >
+              <a className="btn btn-success btn-sm">Join ${info.cost} tier</a>
+            </StripeCheckout>
           </div>
         </div>
       </div>
