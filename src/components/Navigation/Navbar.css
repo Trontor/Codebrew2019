@@ -2,12 +2,22 @@
   z-index: 1;
 }
 
+/* caveat-regular - latin */
+@font-face {
+  font-family: 'Caveat' !important;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Caveat Regular'), local('Caveat-Regular'),
+       url('../../fonts/caveat-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
 .nav a {
   color: white;
 }
 
 .navbar-brand {
   font-size: 1.5em;
+  color: white !important;
 }
 
 .nav a,
