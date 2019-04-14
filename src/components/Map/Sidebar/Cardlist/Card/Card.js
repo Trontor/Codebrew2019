@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 import { withRouter } from "react-router";
 
-const Card = props => {
+const Card = props => {  
   return (
     <div className="card">
       <div className="row ">
@@ -14,7 +14,8 @@ const Card = props => {
             <div className="col-12">
               <h4 className="card-title">{props.name}</h4>{" "}
             </div>
-            <div className="col-12">
+            <div className="col-12 info">
+              <p>{props.job}</p>  
               <p>{props.distance}m away</p>
             </div>
           </div>
@@ -26,6 +27,8 @@ const Card = props => {
           >
             Profile
           </a>
+          <a className="btn btn-red"
+            href={"http://maps.google.com/maps?daddr=" + props.lat + "," + props.long + "&amp;ll="}><i class="fas fa-map-marker-alt"></i></a>
         </div>
       </div>
     </div>

@@ -23,3 +23,7 @@
   font-weight: 500;
   font-family: "Segoe UI ", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.info {
+  line-height: 8px;
+}

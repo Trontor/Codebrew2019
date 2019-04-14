@@ -3,3 +3,11 @@
     scroll-behavior: smooth;
     overflow: scroll;
 }
+.cardlist .col-md-2 {
+    padding:0;
+}
+
+.cardlist .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+}

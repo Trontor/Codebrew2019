@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 import "./MapContainer.css";
 
-const AnyReactComponent = ({ imgsrc }) => (
+const AnyReactComponent = ({ imgsrc, id }) => (
   <div>
     <div className="roundedmarker">
-      <img className="markerimg" src={imgsrc} />
+      <img className="markerimg" src={imgsrc} href={
+        id == null ? null : `/profile/${id - 1}`
+      } />
     </div>
   </div>
 );
@@ -16,7 +18,7 @@ class SimpleMap extends Component {
       lat: -37.8138,
       lng: 144.9646
     },
-    zoom: 16
+    zoom: 15
   };
   state = { userLocation: { lat: 32, lng: 32 }, loading: true };
 
@@ -37,9 +39,7 @@ class SimpleMap extends Component {
   }
 
   render() {
-    console.log(this.props.profiles);
-    if (this.state.loading){
-      return (
+    return (
         // Important! Always set the container height explicitly
         <div style={{ height: "100vh", width: "100%" }}>
           <GoogleMapReact
@@ -47,47 +47,27 @@ class SimpleMap extends Component {
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
           >
+          {!this.state.loading ? (
+                <AnyReactComponent
+                imgsrc={require("../../../images/currentpin.png")}
+                lat={this.state.userLocation.lat}
+                lng={this.state.userLocation.lng}
+              />
+            ) : null}
             <AnyReactComponent lat={-37.8138} lng={144.9646} text="My Marker" />
             {this.props.profiles
               .filter(x => x.live === "y")
               .map(val => (
                 <AnyReactComponent
                   imgsrc={val.imageURL}
+                  id={val.id}
                   lat={val.lat}
                   lng={val.long}
                 />
               ))}
           </GoogleMapReact>
         </div>
-      );
-    }
-    return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: "100vh", width: "100%" }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyCFERBzLDWtOuCyokpgIN3izhT8wokMG28" }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-        <AnyReactComponent
-              imgsrc={require("../../../images/currentpin.png")}
-              lat={this.state.userLocation.lat}
-              lng={this.state.userLocation.lng}
-            />
-          <AnyReactComponent lat={-37.8138} lng={144.9646} text="My Marker" />
-          {this.props.profiles
-            .filter(x => x.live === "y")
-            .map(val => (
-              <AnyReactComponent
-                imgsrc={val.imageURL}
-                lat={val.lat}
-                lng={val.long}
-              />
-            ))}
-        </GoogleMapReact>
-      </div>
     );
-    
   }
 }
 
