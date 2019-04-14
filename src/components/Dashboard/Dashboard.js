@@ -7,6 +7,7 @@ import AverageEarning from "./AverageEarning/AverageEarning";
 import PieAnalytics from "./PieAnalytics/PieAnalytics";
 import Gencard from "./GenCard/GenCard";
 import QR from "./QR/QR";
+import CountUp from "./CountUp/CountUp";
 
 // Div Style for the FAB
 const divStyle = {
@@ -155,7 +156,11 @@ export default class Example extends PureComponent {
                         </p>
                       </div>
                       <div className="card-footer">
-                        <small className="text-muted">{sinceString}</small>
+                        <small className="text-muted">
+                          {this.state.live ? (
+                            <CountUp start={this.state.time} />
+                          ) : null}
+                        </small>
                       </div>
                     </div>
                   </div>
