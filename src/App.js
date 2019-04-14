@@ -6,7 +6,6 @@ import { HashRouter, Route } from "react-router-dom";
 import Map from "./components/Map/Map";
 import Homepage from "./components/Homepage/Homepage";
 import Profile from "./components/Profile/Profile";
-import axios from "axios";
 import Dashboard from "./components/Dashboard/Dashboard";
 
 class App extends Component {
@@ -65,12 +64,6 @@ class App extends Component {
     const spreadsheetID = "1TCCq-MSPEEe5mCCTf5o263RNAdZ2M2gtZqDTu8hZhU8";
     const apiKEY = "AIzaSyCFERBzLDWtOuCyokpgIN3izhT8wokMG28";
     const updateURL = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetID}/values/I8?key=${apiKEY}`;
-    axios
-      .put(updateURL, {
-        values: [[1]]
-      })
-      .then(val => console.log(val))
-      .catch(err => console.log(err));
   };
   customProfile = props => {
     return <Profile profiles={this.state.profiles} {...props} />;
