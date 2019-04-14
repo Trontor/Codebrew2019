@@ -9,6 +9,9 @@ const Featured = props => {
           <img class="card-img-top" src={val.imageURL} />
           <div class="card-body">
             <h5 class="card-title">{val.name}</h5>
+            {val.live === "y" ? (
+              <p class="liveFeatured text-success">Live Now</p>
+            ) : null}
             <p class="card-text">{val.desc}</p>
           </div>
         </div>
