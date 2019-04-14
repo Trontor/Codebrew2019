@@ -14,7 +14,8 @@ const Card = props => {
             <div className="col-12">
               <h4 className="card-title">{props.name}</h4>{" "}
             </div>
-            <div className="col-12">
+            <div className="col-12 info">
+              <p>{props.job}</p>  
               <p>{props.distance}m away</p>
             </div>
           </div>
