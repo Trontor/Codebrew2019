@@ -51,7 +51,14 @@ class Navbar extends Component {
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-default"
           aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#">Profile</a>
+          {process.env.NODE_ENV === "development" ? (
+                <a
+                  className="dropdown-item"
+                  onClick={() => this.props.history.push("/profile/7")}
+                >
+                  Profile
+                </a>
+            ) : null}
           {process.env.NODE_ENV === "development" ? (
                 <a
                   className="dropdown-item"
