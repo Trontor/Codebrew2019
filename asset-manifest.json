@@ -1,17 +1,19 @@
 {
-  "main.css": "/Codebrew2019/static/css/main.355da845.chunk.css",
-  "main.js": "/Codebrew2019/static/js/main.c4d0975b.chunk.js",
-  "main.js.map": "/Codebrew2019/static/js/main.c4d0975b.chunk.js.map",
+  "main.css": "/Codebrew2019/static/css/main.5c1a7ff5.chunk.css",
+  "main.js": "/Codebrew2019/static/js/main.7b10a76b.chunk.js",
+  "main.js.map": "/Codebrew2019/static/js/main.7b10a76b.chunk.js.map",
   "runtime~main.js": "/Codebrew2019/static/js/runtime~main.65fbc26d.js",
   "runtime~main.js.map": "/Codebrew2019/static/js/runtime~main.65fbc26d.js.map",
   "static/css/2.c8908a3d.chunk.css": "/Codebrew2019/static/css/2.c8908a3d.chunk.css",
   "static/js/2.de94008a.chunk.js": "/Codebrew2019/static/js/2.de94008a.chunk.js",
   "static/js/2.de94008a.chunk.js.map": "/Codebrew2019/static/js/2.de94008a.chunk.js.map",
   "index.html": "/Codebrew2019/index.html",
-  "precache-manifest.ad64e8f0e05a78fa2894bbb9b18343c7.js": "/Codebrew2019/precache-manifest.ad64e8f0e05a78fa2894bbb9b18343c7.js",
+  "precache-manifest.2e1532eca94a7891f15f4cbc45d57b0c.js": "/Codebrew2019/precache-manifest.2e1532eca94a7891f15f4cbc45d57b0c.js",
   "service-worker.js": "/Codebrew2019/service-worker.js",
   "static/css/2.c8908a3d.chunk.css.map": "/Codebrew2019/static/css/2.c8908a3d.chunk.css.map",
-  "static/css/main.355da845.chunk.css.map": "/Codebrew2019/static/css/main.355da845.chunk.css.map",
+  "static/css/main.5c1a7ff5.chunk.css.map": "/Codebrew2019/static/css/main.5c1a7ff5.chunk.css.map",
+  "static/media/Navbar.css": "/Codebrew2019/static/media/caveat-v5-latin-regular.ee41a74d.ttf",
   "static/media/currentpin.png": "/Codebrew2019/static/media/currentpin.91aa35e3.png",
-  "static/media/Homepage.css": "/Codebrew2019/static/media/masthead.eebf004e.jpg"
+  "static/media/Homepage.css": "/Codebrew2019/static/media/masthead.eebf004e.jpg",
+  "static/media/qr.png": "/Codebrew2019/static/media/qr.ec15f5d8.png"
 }
