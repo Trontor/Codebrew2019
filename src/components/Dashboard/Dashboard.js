@@ -19,9 +19,30 @@ export default class Example extends PureComponent {
   static jsfiddleUrl = "https://jsfiddle.net/alidingling/w6wsrc52/";
 
   MdAdd = () => {
-    return <a onClick={this.props.goLive}>Go Live</a>;
+    return (
+      <a onClick={() => this.setState({ live: true, time: new Date() })}>
+        Go Live
+      </a>
+    );
+  };
+  state = {
+    live: false,
+    time: undefined
   };
   render() {
+    let timeString = "";
+    let sinceString = "";
+    let liveString = "Not Broadcasting";
+    let colorString = "orange";
+    if (this.state.live) {
+      liveString = "Now Live!";
+      timeString =
+        "Since " +
+        this.state.time.getHours() +
+        ":" +
+        this.state.time.getMinutes() +
+        "PM";
+    }
     return (
       <div className="row" id="dashboard-root">
         <div id="left-dash" className="col-md-3">
@@ -66,7 +87,10 @@ export default class Example extends PureComponent {
                 </div>
               </div>
               <div className="col-md-12">
-                <div className="card">
+                <div className="card text-center">
+                  <h5 className="card-title title text-success">
+                    Patrons over Time
+                  </h5>
                   <EarningGraph />
                   <Fab
                     mainButtonStyles={divStyle}
@@ -78,7 +102,60 @@ export default class Example extends PureComponent {
                 </div>
               </div>
             </div>
-            <div className="col-md-4  " />
+            <div className="col-md-4  ">
+              <div className="row">
+                <div className="col-12">
+                  <div className="col-md-12 ">
+                    <div className="card">
+                      <div className="py-2 text-center">
+                        <h5 className="card-title title text-success">
+                          Current Location
+                        </h5>
+
+                        {/* <img src={dollar} className="dollarimage mx-auto" /> */}
+                        <h1 className="d-inline px-3" style={{ fontSize: 20 }}>
+                          Kwong Lee Dow
+                        </h1>
+                        <p>
+                          37.8040° S, 144.9608° E
+                          <br />
+                        </p>
+                      </div>
+
+                      <div className="card-footer">
+                        <small className="text-muted">
+                          Based on your current location
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-12 ">
+                    <div className="card">
+                      <div className="py-2 text-center">
+                        <h5 className="card-title title text-success">
+                          Broadcasting Status
+                        </h5>
+
+                        {/* <img src={dollar} className="dollarimage mx-auto" /> */}
+                        <h1
+                          className="d-inline px-3"
+                          style={{ fontSize: 20, color: colorString }}
+                        >
+                          {liveString}
+                        </h1>
+                        <p>
+                          {timeString}
+                          <br />
+                        </p>
+                      </div>
+                      <div className="card-footer">
+                        <small className="text-muted">{sinceString}</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* </div>
           <div className="analyticscontainer row">
             <div className="col-md-6 ">
