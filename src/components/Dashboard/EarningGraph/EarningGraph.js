@@ -50,7 +50,7 @@ export default class EarningGraph extends PureComponent {
   render() {
     return (
       <BarChart
-        width={650}
+        width={600}
         height={300}
         data={data}
         margin={{
