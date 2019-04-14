@@ -24,13 +24,16 @@ class Navbar extends Component {
   <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" onClick={() => this.props.history.push("/")}>Home</a>
+        <a class="nav-link" onClick={() => this.props.history.push("/")}><i class="fas fa-home"></i>
+  Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" onClick={() => this.props.history.push("/local")}>Nearby</a>
+        <a class="nav-link" onClick={() => this.props.history.push("/local")}><i class="fas fa-map-marker-alt"></i>
+  Nearby</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" onClick={() => this.props.history.push("/featured")}>Featured</a>
+        <a class="nav-link" onClick={() => this.props.history.push("/featured")}><i class="fas fa-star"></i>
+Featured</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">

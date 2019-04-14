@@ -11,8 +11,16 @@
        url('../../fonts/caveat-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
-.nav a {
+.nav a, .nav-item {
   color: white;
+}
+
+.navbar-brand img{
+  margin-right: -4px;
+}
+
+.fas {
+  margin-right: 4px;
 }
 
 .navbar-brand {
