@@ -23,6 +23,8 @@ const Cardlist = props => {
             job={val.job}
             distance={val.distance}
             src={val.imageURL}
+            lat={val.lat}
+            long={val.long}
           />
         ))}
     </div>
