@@ -32,16 +32,6 @@ class Navbar extends Component {
       <li class="nav-item">
         <a class="nav-link" onClick={() => this.props.history.push("/featured")}>Featured</a>
       </li>
-      {process.env.NODE_ENV === "development" ? (
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  onClick={() => this.props.history.push("/dashboard")}
-                >
-                  Dashboard
-                </a>
-              </li>
-            ) : null}
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item dropdown">
