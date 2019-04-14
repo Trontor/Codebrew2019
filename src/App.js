@@ -7,6 +7,7 @@ import Map from "./components/Map/Map";
 import Homepage from "./components/Homepage/Homepage";
 import Profile from "./components/Profile/Profile";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Featured from "./components/Featured/Featured";
 
 class App extends Component {
   state = { profiles: [] };
@@ -75,6 +76,10 @@ class App extends Component {
   customDashboard = props => {
     return <Dashboard {...props} goLive={this.goLive} />;
   };
+
+  customFeatured = props => {
+    return <Featured {...props} profiles={this.state.profiles} />;
+  };
   render() {
     return (
       <>
@@ -83,6 +88,7 @@ class App extends Component {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/local" component={this.customMap} />
+          <Route exact path="/featured" component={this.customFeatured} />
 
           {process.env.NODE_ENV === "development" ? (
             <Route exact path="/dashboard" component={this.customDashboard} />
