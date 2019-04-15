@@ -5,9 +5,11 @@ import "./MapContainer.css";
 const AnyReactComponent = ({ imgsrc, id }) => (
   <div>
     <div className="roundedmarker">
-      <img className="markerimg" src={imgsrc} href={
-        id == null ? null : `/profile/${id - 1}`
-      } />
+      <img
+        className="markerimg"
+        src={imgsrc}
+        href={id == null ? null : `/profile/${id - 1}`}
+      />
     </div>
   </div>
 );
@@ -40,33 +42,33 @@ class SimpleMap extends Component {
 
   render() {
     return (
-        // Important! Always set the container height explicitly
-        <div style={{ height: "100%", width: "100%" }}>
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: "AIzaSyCFERBzLDWtOuCyokpgIN3izhT8wokMG28" }}
-            defaultCenter={this.props.center}
-            defaultZoom={this.props.zoom}
-          >
+      // Important! Always set the container height explicitly
+      <div id="cntr" style={{ height: "100vh", width: "100%" }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "AIzaSyCFERBzLDWtOuCyokpgIN3izhT8wokMG28" }}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+        >
           {!this.state.loading ? (
-                <AnyReactComponent
-                imgsrc={require("../../../images/currentpin.png")}
-                lat={this.state.userLocation.lat}
-                lng={this.state.userLocation.lng}
+            <AnyReactComponent
+              imgsrc={require("../../../images/currentpin.png")}
+              lat={this.state.userLocation.lat}
+              lng={this.state.userLocation.lng}
+            />
+          ) : null}
+          <AnyReactComponent lat={-37.8138} lng={144.9646} text="My Marker" />
+          {this.props.profiles
+            .filter(x => x.live === "y")
+            .map(val => (
+              <AnyReactComponent
+                imgsrc={val.imageURL}
+                id={val.id}
+                lat={val.lat}
+                lng={val.long}
               />
-            ) : null}
-            <AnyReactComponent lat={-37.8138} lng={144.9646} text="My Marker" />
-            {this.props.profiles
-              .filter(x => x.live === "y")
-              .map(val => (
-                <AnyReactComponent
-                  imgsrc={val.imageURL}
-                  id={val.id}
-                  lat={val.lat}
-                  lng={val.long}
-                />
-              ))}
-          </GoogleMapReact>
-        </div>
+            ))}
+        </GoogleMapReact>
+      </div>
     );
   }
 }

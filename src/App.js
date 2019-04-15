@@ -89,10 +89,7 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           <Route exact path="/local" component={this.customMap} />
           <Route exact path="/featured" component={this.customFeatured} />
-
-          {process.env.NODE_ENV === "development" ? (
-            <Route exact path="/dashboard" component={this.customDashboard} />
-          ) : null}
+          <Route exact path="/dashboard" component={this.customDashboard} />
           <Route exact path="/profile/:id" component={this.customProfile} />
         </HashRouter>
       </>
