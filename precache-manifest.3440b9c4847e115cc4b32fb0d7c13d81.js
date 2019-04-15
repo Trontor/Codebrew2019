@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/Codebrew2019/static/media/currentpin.91aa35e3.png"
   },
   {
-    "revision": "c64ce20f5d8cf221ffae",
-    "url": "/Codebrew2019/static/css/main.6d1069a4.chunk.css"
+    "revision": "1e830186af107a58a330",
+    "url": "/Codebrew2019/static/css/main.200fe028.chunk.css"
   },
   {
     "revision": "b0640483c878240a6267",
@@ -16,16 +16,16 @@ self.__precacheManifest = [
     "url": "/Codebrew2019/static/media/qr.bf87c55f.png"
   },
   {
-    "revision": "dd3722cc603a82b5bc25",
-    "url": "/Codebrew2019/static/js/2.2ec796cc.chunk.js"
+    "revision": "402d0aec577e9073d4a4",
+    "url": "/Codebrew2019/static/js/2.33076118.chunk.js"
   },
   {
     "revision": "ee41a74d1a8a79a23a0a3b82730ef552",
     "url": "/Codebrew2019/static/media/caveat-v5-latin-regular.ee41a74d.ttf"
   },
   {
-    "revision": "c64ce20f5d8cf221ffae",
-    "url": "/Codebrew2019/static/js/main.50bd91b2.chunk.js"
+    "revision": "1e830186af107a58a330",
+    "url": "/Codebrew2019/static/js/main.4bafe30e.chunk.js"
   },
   {
     "revision": "cdae61d4e1102ea4a0d52fc7a6662a59",
@@ -44,11 +44,11 @@ self.__precacheManifest = [
     "url": "/Codebrew2019/static/media/image3.bf0a0988.jpg"
   },
   {
-    "revision": "dd3722cc603a82b5bc25",
-    "url": "/Codebrew2019/static/css/2.c8908a3d.chunk.css"
+    "revision": "402d0aec577e9073d4a4",
+    "url": "/Codebrew2019/static/css/2.39077774.chunk.css"
   },
   {
-    "revision": "290eb48f650d430e3aaaa95d8ee1e8dc",
+    "revision": "b812b4a1a1ab89cf2faeff381ef25899",
     "url": "/Codebrew2019/index.html"
   }
 ];
