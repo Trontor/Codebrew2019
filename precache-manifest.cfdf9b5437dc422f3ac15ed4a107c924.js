@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Codebrew2019/static/media/currentpin.91aa35e3.png"
   },
   {
-    "revision": "7d6cc9ed82f28a45ee90",
+    "revision": "99711f18f9184c8c6177",
     "url": "/Codebrew2019/static/css/main.200fe028.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/Codebrew2019/static/media/caveat-v5-latin-regular.ee41a74d.ttf"
   },
   {
-    "revision": "7d6cc9ed82f28a45ee90",
-    "url": "/Codebrew2019/static/js/main.c0237277.chunk.js"
+    "revision": "99711f18f9184c8c6177",
+    "url": "/Codebrew2019/static/js/main.d7549f72.chunk.js"
   },
   {
     "revision": "cdae61d4e1102ea4a0d52fc7a6662a59",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/Codebrew2019/static/css/2.39077774.chunk.css"
   },
   {
-    "revision": "2900d0e6a17ff08ea2cb13b2bdbf804f",
+    "revision": "7a8d5484d7ebebcc59032c7fa1d63be1",
     "url": "/Codebrew2019/index.html"
   }
 ];
